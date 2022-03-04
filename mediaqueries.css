@@ -2,7 +2,7 @@
 
 /*TABLETTE*/
 
-    @media screen and (min-width: 769px) and (max-width: 992px)
+    @media screen and (min-width: 768px) and (max-width: 992px)
 
     {
 
@@ -53,6 +53,11 @@
         {
             border-top: none;
             border-left: solid 1px #0065fc;       
+        }
+
+        #accroche
+        {
+            padding-left: 10px;
         }
 
         /*SEARCH SECTION*/
@@ -257,7 +262,7 @@
 
 /*MOBILES*/
 
-    @media screen and (max-width: 768px)
+    @media screen and (max-width: 767px)
 
     {
         /*GENERAL*/
@@ -281,31 +286,26 @@
 
     /*HEADER*/
 
-        header
+        #accueil
         {
             flex-direction: column;
-        }
-
-        header div 
-        {
-            justify-content: center; 
+            text-align: center; 
         }
 
         header img
         {
-            max-width: 30%; /*diminué*/
             margin: 20px 0px 20px 0px;
         }
 
         header nav 
         {
             justify-content: center; /*flex-end dans style*/
+            width: 100%;
         }
 
         header nav ul /*n'existe pas dans style*/
         {
             display: flex;
-            flex-direction: normal;
             padding-inline-start: 0px; /*supprime un padding qu'a décidé de me coller Chrome dans "feuille de style user-agent" -> à voir*/
             flex: 1;
         }
@@ -326,6 +326,11 @@
             border-bottom: solid 3px #0065fc;   
             padding-bottom: 10px;  
         }
+
+        #accroche
+    {
+        padding: 0 15px 0 15px;
+    }
 
     /*SEARCH SECTION*/
 
@@ -403,6 +408,11 @@
         #hebergement
         {
             flex-direction: column-reverse;
+        }
+
+        #hebergement h3
+        {
+            padding-left: 20px;
         }
 
         .fa-star
@@ -549,17 +559,60 @@
 
 }
 
+@media screen and (min-width: 993px) and (max-width: 1350px)
 
+{
+    /*ACTIVITES SECTION*/
 
+    
 
+    #bloc_activites 
+    {
+        flex-direction: row; 
+        justify-content: space-around; 
+        height: 700px;
+    }
 
+    .fiche_activites 
+    {
+        height: 220px; 
+        width: 330px; 
+        margin-bottom: 30px;
+    }
 
+    .act1 img
+    {
+        height: 170px; /*ajustement*/
+        width: 330px; /*ajustement*/
+    }
 
+    .act2 img
+    {
+        height: 170px; /*ajustement*/
+        width: 330px; /*ajustement*/
+    }
 
+    .act3 img
+    {
+        height: 170px; /*ajustement*/
+        width: 330px; /*ajustement*/
+    }
 
+    .act4 img
+    {
+        height: 170px; /*ajustement*/
+        width: 330px; /*ajustement*/
+    }
 
+    .act5 img
+    {
+        height: 170px; /*ajustement*/
+        width: 330px; /*ajustement*/
+    }
 
-
-
-
-
+    .act6 img
+    {
+        height: 170px; /*ajustement*/
+        width: 330px; /*ajustement*/
+    }
+}

@@ -4,7 +4,7 @@
 
     *
     {
-        box-sizing: border-box; 
+        box-sizing: border-box;         
     }
 
     .container 
@@ -57,7 +57,7 @@
 
 /*HEADER*/
 
-    header
+    #accueil
     {
         display: flex;
     }
@@ -104,6 +104,12 @@
     {
         color: #0065fc;
         padding-top: 40px;
+    }
+
+    #accroche
+    {
+        display: block;
+        margin: 5px;
     }
 
 /*SEARCH SECTION*/
@@ -255,6 +261,11 @@
     {
         display: flex;
         justify-content: space-between;
+    }
+    
+    #hebergement h3
+    {
+        padding-left: 40px;
     }
 
     .fa-star
@@ -497,7 +508,7 @@
 
     footer div
     {
-        margin: 40px 200px 40px 0;
+        margin: 40px 80px 40px 0;
         padding-left: 100px;
     }
 

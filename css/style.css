@@ -1,0 +1,547 @@
+/*GENERAL*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+    *
+    {
+        box-sizing: border-box;         
+    }
+
+    .container 
+    {
+        margin: auto;
+        width: 90%;        
+    }
+
+    body
+    {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    a
+    {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover
+    {
+        color: #0065fc;
+        text-decoration: none;
+    }
+
+    h1
+    {
+        font-size: 24px;
+    }
+
+    h2
+    {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 30px 0 15px 40px;
+    }
+
+    h3
+    {
+        font-weight: bold;
+        margin-right: 50px;    
+    }
+
+    h4
+    {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+/*HEADER*/
+
+    #accueil
+    {
+        display: flex;
+    }
+
+    header div 
+    {
+        align-items: center;
+        display: flex;
+    }
+
+    header img
+    {
+        max-width: 60%;
+        padding-left: 20px;
+    }
+
+    header nav 
+    {
+        display: flex;
+        flex: 1; /*=flex: 1 1 0 : avoir même largeur par élément et répartir l'espace de façon équitable*/
+        justify-content: flex-end;        
+    }
+
+    header nav li 
+    {
+        float: left;
+        list-style-type: none;
+        padding: 50px;  
+    }
+
+    header nav li:hover /*pour bordure sur le contenant et non juste la zone du lien*/
+    {
+        border-top: solid 1px #0065fc;       
+    }
+
+    header nav li a 
+    {
+        color: black;
+        font-size: 16px;  
+        text-decoration: none;
+    }
+
+    header nav a:hover 
+    {
+        color: #0065fc;
+        padding-top: 40px;
+    }
+
+    #accroche
+    {
+        display: block;
+        margin: 5px;
+    }
+
+/*SEARCH SECTION*/
+
+    /*BARRE DE RECHERCHE*/
+
+        #search
+        {
+            margin-bottom: 40px;
+        }
+
+        #search_bar 
+        {
+            height: 50px;
+            margin: 20px 0 20px 0;
+            position: relative;
+            width: 400px;
+        }
+        
+        .fa-location-dot 
+        {
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            height: 50px;
+            padding: 15px 20px 5px 20px;
+            position: absolute;
+        }
+
+        #city 
+        {
+            position: absolute; 
+            left: 54px;
+            width: 250px;
+            height: 50px;                        
+            padding-left: 15px;
+            text-align: left;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-top: 1px solid #f2f2f2;
+            border-bottom: 1px solid #f2f2f2;
+        }
+
+        #loupe
+        {
+            display: none;
+        }
+
+        #search_button 
+        {
+            position: absolute; 
+            right: 0;
+            width: 120px;
+            height: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: #0065fc;
+            color: white;
+        } 
+
+        #search_button:hover 
+        {
+            border: 1px solid #0065fc;
+            font-style: italic;
+            cursor: pointer;
+            background-color: #deebff;
+            color: #0065fc;
+        }
+
+    /*FILTRES*/
+
+        #filters
+        {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        form
+        {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .button 
+        {
+            display: flex;
+            align-items: center;
+            border: 2px solid #f2f2f2;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            background: none;
+            padding: 0 30px 0 0;
+            margin-right: 20px;
+            cursor: pointer;
+            height: 53px;
+        }
+
+        .icons /*décallage de l'icône dans le bouton : marge gauche négative*/
+        {
+            display: flex;
+            height: 50px;
+            width: 50px;
+            margin: 0 20px 0 -5px;
+            padding-left: 5px;
+            align-items: center;
+            justify-content: left;
+            border-radius: 50px;
+            background-color: #deebff;
+            color: #0065fc;
+        }
+
+        .button:hover .icons
+        {
+            color: #deebff;
+            background-color: #0065fc;
+        }
+
+        .button:hover
+        {
+            background-color: #0065fc;
+            color: #deebff;
+            font-style: italic;
+        }
+
+        #dispo_info
+        {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .fa-info
+        {
+            border: 1px solid #f2f2f2;
+            border-radius: 200px;
+            padding: 2px 8px 4px 8px;
+            color: #0065fc;
+            margin: 15px 25px 15px 0;
+        }      
+
+/*HEBERGEMENT SECTION*/
+
+    #hebergement
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #hebergement h3
+    {
+        padding-left: 40px;
+    }
+
+    .fa-star
+    {
+        font-size: 12px;
+    }
+
+    .full_star
+    {
+        color: #0065fc;
+    }
+
+    .empty_star
+    {   
+        color: #f2f2f2;
+    }
+
+     /*LISTE HÔTELS*/
+
+        article
+        {
+            flex: 66%;
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            border-radius: 15px;
+            margin-right: 50px;
+        }
+   
+        #bloc_hotel
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .fiche_hotel
+        {
+            border: 2px solid white;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #dddddd;
+            padding: 5px;
+            margin-bottom: 10px;
+            line-height: 16px;
+        }
+
+        .fiche_hotel:hover
+        {
+            box-shadow: 0 8px 16px #0065fc;
+        }
+
+        .hotel img
+        {
+            object-fit: cover;
+            width: 250px;
+            height: 125px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+    /*POPULAIRES*/
+
+        aside
+        {
+            flex: 33%;
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            border-radius: 15px;
+        }
+
+        #pop-title
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fa-arrow-trend-up
+        {
+            position: relative;
+            right: 70px;
+            top: 35px;
+            font-size: 20px;
+        }
+
+        #bloc_populaires
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: space-between;
+        
+        }
+
+        .fiche_populaires
+        {
+            display: flex;
+            flex-direction: row;
+            border: 2px solid white;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #dddddd;
+            width: 350px;
+            padding: 5px;
+            margin: 10px;
+            line-height: 16px;
+        }
+
+        .fiche_populaires:hover
+        {
+            box-shadow: 0 8px 16px #0065fc;
+        }
+
+        .pop img
+        {
+            object-fit: cover;
+            width: 150px;
+            height: 150px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }        
+
+        .text_populaires
+        {
+            margin: 0 5px 0 15px;
+        }
+
+        .stars
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-top: 50px;
+        }
+
+        aside p
+        {
+            margin-top: 8px;
+        }
+
+/*ACTIVITES SECTION*/
+
+    #activites 
+    {
+        margin-bottom: 60px;
+    }
+
+    #activites h2
+    {
+        margin: 60px 0 15px 0;
+    }
+
+    #activites h4
+    {
+        padding: 0 0 15px 20px;
+    }
+
+    #bloc_activites 
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        height: 455px;
+        margin-top: 24px;
+    }
+
+    .fiche_activites 
+    {
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px #dddddd;
+    }
+
+    .fiche_activites:hover
+    {
+        box-shadow: 0 8px 16px #0065fc;
+    }
+
+    .box_activites 
+    {
+        width: 300px;
+        background-position: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .act1 img
+    {
+        object-fit: cover;
+        height: 400px;
+        width: 300px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .act2 img
+    {
+        object-fit: cover;
+        height: 180px;
+        width: 300px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .act3 img
+    {
+        object-fit: cover;
+        height: 110px;
+        width: 300px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .act4 img
+    {
+        object-fit: cover;
+        height: 400px;
+        width: 300px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .act5 img
+    {
+        object-fit: cover;
+        height: 140px;
+        width: 300px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .act6 img
+    {
+        object-fit: cover;
+        height: 150px;
+        width: 300px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+/**FOOTER**/
+
+    footer
+    {
+        display: flex;
+        justify-content: flex-start;
+        background-color: #f2f2f2;
+    }
+
+    footer div
+    {
+        margin: 40px 80px 40px 0;
+        padding-left: 100px;
+    }
+
+    footer nav ul
+    {
+        padding-left: 0;
+        line-height: 30px;
+    }
+
+    footer nav li
+    {
+        list-style-type: none;
+    }
+
+    footer nav li a 
+    {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;    
+    }
+
+    footer nav a:hover
+    {
+        border-bottom: solid 1px #0065fc;
+        color: #0065fc;
+    }
+

@@ -1,0 +1,618 @@
+/* Breakpoints : >992px pour desktop (1), entre 768px et 992px pour tablette (2), <768px pour mobile (3) -> Media Queries */
+
+/*TABLETTE*/
+
+    @media screen and (min-width: 768px) and (max-width: 992px)
+
+    {
+
+        /*GENERAL*/
+
+        .container 
+        {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        h1
+        {
+            font-size: 28px;
+        }
+
+        h3
+        {
+            font-size: 20px;  
+        }
+
+        p
+        {
+            font-size: 16px;
+        }
+
+        /*HEADER*/
+
+        header img
+        {
+            max-width: 80%;
+            padding-left: 60px;
+        }
+
+        header nav 
+        {
+            flex-direction: column; 
+            align-items: end;
+        }
+
+        header nav li 
+        {
+            float: none;
+            padding: 20px;  
+        }
+
+        header nav li:hover
+        {
+            border-top: none;
+            border-left: solid 1px #0065fc;       
+        }
+
+        #accroche
+        {
+            padding-left: 10px;
+        }
+
+        /*SEARCH SECTION*/
+
+        /*BARRE DE RECHERCHE*/
+
+            #search_bar 
+            {
+                width: 500px;
+                margin: 20px 40px 20px 40px;
+            }
+
+            #city 
+            {
+                width: 400px;
+            }
+
+            #search_button 
+            {
+                width: 150px;
+            } 
+
+            #search h1, #search p
+            {            
+                padding-left: 20px;
+            }
+            
+        /*FILTRES*/
+
+            #filters
+            {
+                display: block;
+                margin-top: 40px;
+                margin-left: 20px;
+            }
+
+            form
+            {
+                flex-wrap: wrap;
+            }
+
+            .button 
+            {
+                margin: 5px 20px 5px 20px;
+                height: 60px;
+            }
+
+            .icons
+            {
+                height: 60px;
+                width: 60px;
+            }
+
+            #dispo_info
+            {
+                padding-top: 15px;
+            }
+
+            .fa-info
+            {
+                margin: 15px 0px 15px 20px; 
+                align-self: flex-start; 
+            }
+
+            #dispo_info p 
+            {
+                padding-left: 20px;
+            } 
+
+        /*HEBERGEMENT SECTION*/
+
+        #hebergement
+        {
+            flex-direction: column-reverse;
+        }
+
+        .fa-star
+        {
+            font-size: 11px;
+        }
+
+        /*LISTE HÔTELS*/
+
+            article
+            {
+                background-color: white; 
+                border: none; 
+                border-radius: 0px; 
+                margin-right: 0; 
+                margin-top: 20px; 
+            }
+
+            #bloc_hotel
+            {
+                height: 800px;
+            }
+    
+            .hotel img
+            {
+                width: 330px; 
+                height: 150px; 
+            }
+
+            article h3 
+            {
+                padding-left: 40px;
+            }
+
+            article h4
+            {
+                margin-top: 5px;
+            }
+
+        /*POPULAIRES*/
+
+            aside
+            {
+                border-radius: 0px; 
+            }  
+
+            .stars
+            {
+                margin-top: 65px; 
+            }
+
+            aside h4 
+            {
+                margin-top: 10px; 
+            }
+
+    /*ACTIVITES SECTION*/
+
+        #activites h2
+        {
+            margin: 40px 0px 15px 40px; 
+        }
+
+        #activites h4
+        {
+            margin-top: 10px; 
+        }
+
+        #bloc_activites 
+        {
+            flex-direction: row; 
+            justify-content: space-around; 
+            height: 700px; 
+        }
+
+        .fiche_activites 
+        {
+            height: 220px; 
+            width: 330px; 
+            margin-bottom: 30px;
+        }
+
+        .act1 img
+        {
+            height: 170px; 
+            width: 330px; 
+        }
+
+        .act2 img
+        {
+            height: 170px; 
+            width: 330px; 
+        }
+
+        .act3 img
+        {
+            height: 170px; 
+            width: 330px; 
+        }
+
+        .act4 img
+        {
+            height: 170px; 
+            width: 330px; 
+        }
+
+        .act5 img
+        {
+            height: 170px; 
+            width: 330px; 
+        }
+
+        .act6 img
+        {
+            height: 170px; 
+            width: 330px; 
+        }
+
+        /**FOOTER**/
+
+        footer div
+        {
+            margin: 20px 30px 20px 0px;
+            padding-left: 30px;
+        }
+
+    }
+
+/*MOBILES*/
+
+    @media screen and (max-width: 767px)
+
+    {
+        /*GENERAL*/
+
+        .container 
+        {
+            width: 100%; 
+            margin: 0 auto; 
+        }
+        
+        h1
+        {
+            font-size: 22px; 
+        }
+
+        h2
+        {
+            font-size: 22px; 
+            margin: 30px 0px 15px 15px; 
+        }
+
+    /*HEADER*/
+
+        #accueil
+        {
+            flex-direction: column;
+            text-align: center; 
+        }
+
+        header img
+        {
+            margin: 20px 0px 20px 0px;
+        }
+
+        header nav 
+        {
+            justify-content: center; 
+            width: 100%;
+        }
+
+        header nav ul 
+        {
+            display: flex;
+            padding-inline-start: 0px; /*supprime un padding qu'a décidé de me coller Chrome dans "feuille de style user-agent" -> à voir*/
+            flex: 1;
+        }
+
+        header nav li 
+        {
+            float: none; 
+            padding: 0px; 
+            flex: 1;
+            text-align: center;
+            border-bottom: solid 3px #dddddd;
+            padding-bottom: 10px;
+        }
+
+        header nav li:hover 
+        {
+            border-top: none;
+            border-bottom: solid 3px #0065fc;   
+            padding-bottom: 10px;  
+        }
+
+        #accroche
+    {
+        padding: 0 15px 0 15px;
+    }
+
+    /*SEARCH SECTION*/
+
+        /*BARRE DE RECHERCHE*/
+
+        #search h1, #search p 
+        {
+            padding: 0px 20px 0px 20px;
+        }
+
+        #search_bar 
+        {
+            width: 340px;        
+            margin: 20px; 
+        }
+        
+        #loupe /*display: none dans style, même contenu - adapté - que search_button de style*/
+        {
+            display: block; 
+            position: absolute; 
+            right: 0px;
+            width: 50px; 
+            height: 50px;
+            border: none;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 18px;
+            border-bottom-left-radius: 18px;
+            background-color: #0065fc;
+            color: white;
+        }
+
+        #search_button 
+        {
+            display: none; 
+        } 
+
+        /*FILTRES*/
+
+            #filters
+            {
+                display: block; 
+                padding: 0px 20px 0px 20px;
+            }
+
+            form
+            {
+                flex-wrap: wrap;
+            }
+
+            .button 
+            {
+                padding: 0px 10px 0px 0px; 
+                margin: 10px 10px 0px 0px;
+            }
+
+            #dispo_info
+            {
+                padding-top: 15px;
+            }
+
+            .fa-info
+            {
+                margin: 15px 0px 15px 20px; 
+                align-self: flex-start; 
+            }
+
+            #dispo_info p 
+            {
+                padding-left: 10px;
+            }
+            
+    /*HEBERGEMENT SECTION*/
+
+        #hebergement
+        {
+            flex-direction: column-reverse;
+        }
+
+        #hebergement h3
+        {
+            padding-left: 20px;
+        }
+
+        .fa-star
+        {
+            font-size: 11px; 
+        }
+
+        /*LISTE HÔTELS*/
+
+            article
+            {
+                background-color: white; 
+                border: none; 
+                border-radius: 0px; 
+                margin-right: 0; 
+                margin-top: 20px; 
+            }
+    
+            .hotel img
+            {
+                width: 330px; 
+                height: 110px; 
+            }
+
+            article h3 
+            {
+                padding-left: 20px;
+            }
+
+        /*POPULAIRES*/
+
+            aside
+            {
+                border-radius: 0px; 
+            }  
+
+            .fiche_populaires
+            {
+                width: 325px;
+            }
+
+            .pop img
+            {
+                width: 130px; 
+                height: 130px; 
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+            }        
+
+            .stars
+            {
+                margin-top: 45px; 
+            }
+
+            aside h4 
+            {
+                margin-top: 10px; 
+            }
+
+    /*ACTIVITES SECTION*/
+
+        #activites h2
+        {
+            margin: 40px 0px 15px 20px; 
+        }
+
+        #activites h4
+        {
+            margin-top: 10px; 
+        }
+
+        #bloc_activites 
+        {
+            flex-direction: row; 
+            justify-content: space-around; 
+            height: 100%; 
+        }
+
+        .fiche_activites 
+        {
+            height: 190px; 
+            width: 330px; 
+            margin-bottom: 30px;
+        }
+
+        .act1 img
+        {
+            height: 140px; 
+            width: 330px; 
+        }
+
+        .act2 img
+        {
+            height: 140px; 
+            width: 330px; 
+        }
+
+        .act3 img
+        {
+            height: 140px; 
+            width: 330px; 
+        }
+
+        .act4 img
+        {
+            height: 140px; 
+            width: 330px; 
+        }
+
+        .act5 img
+        {
+            height: 140px; 
+            width: 330px; 
+        }
+
+        .act6 img
+        {
+            height: 140px; 
+            width: 330px; 
+        }
+
+    /**FOOTER**/
+
+        footer
+        {
+            flex-direction: column; 
+        }
+
+        footer div
+        {
+            margin: 0px; 
+            padding-left: 0px; 
+        }
+
+        footer h3 
+        {
+            padding: 20px 0px 0px 20px;
+        }
+
+        footer nav ul
+        {
+            padding: 0px 20px 0px 20px; 
+        }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1350px)
+
+{
+    /*ACTIVITES SECTION*/
+
+    
+
+    #bloc_activites 
+    {
+        flex-direction: row; 
+        justify-content: space-around; 
+        height: 700px;
+    }
+
+    .fiche_activites 
+    {
+        height: 220px; 
+        width: 330px; 
+        margin-bottom: 30px;
+    }
+
+    .act1 img
+    {
+        height: 170px; 
+        width: 330px; 
+    }
+
+    .act2 img
+    {
+        height: 170px; 
+        width: 330px; 
+    }
+
+    .act3 img
+    {
+        height: 170px; 
+        width: 330px; 
+    }
+
+    .act4 img
+    {
+        height: 170px; 
+        width: 330px; 
+    }
+
+    .act5 img
+    {
+        height: 170px; 
+        width: 330px; 
+    }
+
+    .act6 img
+    {
+        height: 170px; 
+        width: 330px; 
+    }
+}
